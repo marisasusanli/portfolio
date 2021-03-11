@@ -750,17 +750,7 @@
           "omitted": false,
           "linkType": "Asset"
         },
-        {
-          "id": "twiteerHandle",
-          "name": "Twiteer Handle",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
+
         {
           "id": "siteDescription",
           "name": "Site Description",
@@ -1288,11 +1278,7 @@
           "widgetId": "assetLinkEditor",
           "widgetNamespace": "builtin"
         },
-        {
-          "fieldId": "twiteerHandle",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        },
+
         {
           "fieldId": "siteDescription",
           "widgetId": "singleLine",
@@ -1980,9 +1966,6 @@
               "id": "7yHuAa09NVOcZ25POk7cbM"
             }
           }
-        },
-        "twiteerHandle": {
-          "en-US": "@rohitguptab"
         },
         "siteDescription": {
           "en-US": "Personal Site"

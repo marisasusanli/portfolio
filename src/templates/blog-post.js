@@ -1,31 +1,29 @@
-import React, { Component } from "react";
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
-import moment from "moment";
-import { DiscussionEmbed } from "disqus-react";
+import React, { Component } from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import moment from 'moment';
+import { DiscussionEmbed } from 'disqus-react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Share from "../components/share";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Share from '../components/share';
 
 export default class blogPost extends Component {
   render() {
     const data = this.props.data.contentfulBlogs;
-    const disqusShortname = "RohitGupta";
+    const disqusShortname = 'RohitGupta';
     const disqusConfig = {
       identifier: data.id,
-      title: data.title
+      title: data.title,
     };
 
-    const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
-    const twiteerhandle = this.props.data.contentfulSiteInformation
-      .twiteerHandle;
+    const siteurl = this.props.data.contentfulSiteInformation.siteUrl + '/';
     const socialConfigss = {
       site: {
-        siteMetadata: { siteurl, twiteerhandle }
+        siteMetadata: { siteurl },
       },
       title: data.title,
-      slug: data.slug
+      slug: data.slug,
     };
 
     return (
@@ -36,43 +34,34 @@ export default class blogPost extends Component {
             `Rohit Gupta`,
             `Frontend Developer`,
             `Developer`,
-            `${data.title}`
+            `${data.title}`,
           ]}
         />
-        <div className="site-container blog-post">
-          <div className="container">
+        <div className='site-container blog-post'>
+          <div className='container'>
             {data.featureImage ? (
               <Img
-                className="feature-img"
+                className='feature-img'
                 fluid={data.featureImage.fluid}
-                objectFit="cover"
-                objectPosition="50% 50%"
+                objectFit='cover'
+                objectPosition='50% 50%'
               />
             ) : (
-              <div className="no-image"></div>
+              <div className='no-image'></div>
             )}
 
-            <div className="details">
-              <h1 className="title">{data.title}</h1>
-              <span className="date">
-                <i className="fas fa-calendar-alt"></i>{" "}
-                {moment(data.createdAt).format("LL")}
+            <div className='details'>
+              <h1 className='title'>{data.title}</h1>
+              <span className='date'>
+                <i className='fas fa-calendar-alt'></i>{' '}
+                {moment(data.createdAt).format('LL')}
               </span>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: data.description.childMarkdownRemark.html
+                  __html: data.description.childMarkdownRemark.html,
                 }}
               />
             </div>
-            <Share
-              socialConfig={{
-                ...socialConfigss.site.siteMetadata.twiteerhandletitle,
-                config: {
-                  url: `${siteurl}${socialConfigss.slug}`,
-                  title: `${socialConfigss.title}`
-                }
-              }}
-            />
             <DiscussionEmbed
               shortname={disqusShortname}
               config={disqusConfig}
@@ -110,7 +99,6 @@ export const pageQuery = graphql`
     }
     contentfulSiteInformation {
       siteUrl
-      twiteerHandle
     }
   }
 `;
