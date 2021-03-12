@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 * {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
+
 img {
   max-width: 100%;
 }
@@ -573,13 +574,12 @@ h2:after,
   margin: 0 -5px;
 }
 .work-list .item {
-  width: 33.33%;
+  width: 33.3%;
   padding: 0 5px;
   margin-bottom: 10px;
 }
 .work-description {
-  padding: 5px;
-  margin-top: 5px;
+  padding: 8px;
   text-align: center;
 }
 .testimonials .slick-list * {
@@ -1051,4 +1051,8 @@ code {
   .about-main .left .gatsby-image-wrapper {
     height: 400px;
   }
+}
+
+.message {
+  margin: 5px 0px;
 }
