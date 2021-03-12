@@ -194,6 +194,11 @@ export const pageQuery = graphql`
               sizes
             }
           }
+          description {
+            childMarkdownRemark {
+              html
+            }
+          }
         }
       }
     }
