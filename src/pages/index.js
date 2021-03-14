@@ -9,9 +9,7 @@ import About from '../components/about';
 import Service from '../components/service';
 import Work from '../components/work';
 import Blogs from '../components/blogs';
-import Testimonial from '../components/testimonial';
 import Contact from '../components/contact';
-import Photos from '../components/photos';
 
 const IndexPage = ({ data }) => (
   <Layout header='home'>
