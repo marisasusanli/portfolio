@@ -2,38 +2,22 @@ import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import moment from 'moment';
-import { DiscussionEmbed } from 'disqus-react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Share from '../components/share';
 
 export default class blogPost extends Component {
   render() {
     const data = this.props.data.contentfulBlogs;
-    const disqusShortname = 'RohitGupta';
-    const disqusConfig = {
-      identifier: data.id,
-      title: data.title,
-    };
-
-    const siteurl = this.props.data.contentfulSiteInformation.siteUrl + '/';
-    const socialConfigss = {
-      site: {
-        siteMetadata: { siteurl },
-      },
-      title: data.title,
-      slug: data.slug,
-    };
 
     return (
       <Layout>
         <SEO
           title={data.title}
           keywords={[
-            `Rohit Gupta`,
+            `Marisa Li`,
             `Frontend Developer`,
-            `Developer`,
+            `Software Engineer`,
             `${data.title}`,
           ]}
         />
@@ -62,10 +46,6 @@ export default class blogPost extends Component {
                 }}
               />
             </div>
-            <DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            />
           </div>
         </div>
       </Layout>

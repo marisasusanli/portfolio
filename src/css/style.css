@@ -672,8 +672,11 @@ pre {
   padding: 100px 0 20px 0;
 }
 .blog-post .feature-img {
-  width: 100%;
-  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 400px;
 }
 .blog-post .details .date {
   margin-bottom: 40px;

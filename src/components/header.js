@@ -133,11 +133,11 @@ export default class Header extends Component {
                     .map((t) => {
                       return (
                         <li key='blogs'>
-                          <Link to='/blogs'>Blogs</Link>
+                          <Link to='/blogs'>Blog</Link>
                         </li>
                       );
                     })}
-                  {data.menus
+                  {/* {data.menus
                     .filter((item) => item === 'Photos')
                     .map((t) => {
                       return (
@@ -145,7 +145,7 @@ export default class Header extends Component {
                           <Link to='/photos'>Photos</Link>
                         </li>
                       );
-                    })}
+                    })} */}
                 </ul>
               </div>
             )}
