@@ -45,23 +45,6 @@ const IndexPage = ({ data }) => (
         return <Blogs key='Blogs' data={data.allContentfulBlogs}></Blogs>;
       })}
 
-    {/* {data.contentfulSiteInformation.menus
-      .filter((item) => item === 'Testimonials')
-      .map((t) => {
-        return (
-          <Testimonial
-            key='Testimonial'
-            data={data.allContentfulTestimonials}
-          ></Testimonial>
-        );
-      })}
-
-    {data.contentfulSiteInformation.menus
-      .filter((item) => item === 'Photos')
-      .map((t) => {
-        return <Photos key='Photos' data={data.contentfulPhotos}></Photos>;
-      })} */}
-
     {data.contentfulSiteInformation.menus
       .filter((item) => item === 'Contact')
       .map((t) => {

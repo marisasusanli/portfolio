@@ -86,25 +86,6 @@ export default class Header extends Component {
                       );
                     })}
 
-                  {/* {data.menus
-                    .filter((item) => item === 'Testimonials')
-                    .map((t) => {
-                      return (
-                        <li key='Testimonials'>
-                          <Link to={`/#Testimonials`}>Testimonials</Link>
-                        </li>
-                      );
-                    })}
-                  {data.menus
-                    .filter((item) => item === 'Photos')
-                    .map((t) => {
-                      return (
-                        <li key='Photos'>
-                          <Link to={`/#Photos`}>Photos</Link>
-                        </li>
-                      );
-                    })} */}
-
                   {data.menus
                     .filter((item) => item === 'Contact')
                     .map((t) => {
@@ -137,15 +118,6 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
-                  {/* {data.menus
-                    .filter((item) => item === 'Photos')
-                    .map((t) => {
-                      return (
-                        <li key='photos'>
-                          <Link to='/photos'>Photos</Link>
-                        </li>
-                      );
-                    })} */}
                 </ul>
               </div>
             )}

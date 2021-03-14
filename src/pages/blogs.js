@@ -16,8 +16,8 @@ export default class Blogs extends Component {
           title='Blog'
           keywords={[
             `Marisa Li`,
-            `Frontend Developer`,
             `Software Engineer`,
+            `Software Developer`,
             `Blog`,
           ]}
         />
