@@ -135,30 +135,6 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulTestimonials {
-      edges {
-        node {
-          name
-          subTitle
-          description {
-            childMarkdownRemark {
-              html
-            }
-          }
-          avatarImage {
-            fluid(maxWidth: 200) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-            }
-          }
-        }
-      }
-    }
     allContentfulWorks {
       edges {
         node {
@@ -183,19 +159,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    contentfulPhotos {
-      photos {
-        fluid(maxWidth: 600) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
-    }
+
     contentfulSiteInformation {
       menus
     }
