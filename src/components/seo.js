@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import sitePhoto from '../images/portfolio_site.jpg';
 
 function SEO({ description, lang, meta, keywords, title, data }) {
   return (
@@ -31,6 +32,10 @@ function SEO({ description, lang, meta, keywords, title, data }) {
               {
                 property: `og:type`,
                 content: `website`,
+              },
+              {
+                property: `og:image`,
+                content: sitePhoto,
               },
               {
                 name: `twitter:card`,
